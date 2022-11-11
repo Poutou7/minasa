@@ -1,0 +1,100 @@
+/*** Start NavBar***/
+.navbar {
+  color: var(--second-color);
+  height: 140px;
+  font-weight: 700;
+}
+
+.navbar .login a {
+  margin-left: 50px;
+  font-size: 17px;
+}
+
+.navbar ul a {
+  margin-left: 30px;
+  transition: var(--transition);
+}
+
+.navbar ul a:hover {
+  color: var(--second-alt-color);
+}
+
+.navbar .logo {
+  color: var(--base-color);
+  font-size: 31px;
+}
+
+/*** End NavBar***/
+
+
+/*** Start Land***/
+.land {
+  margin-top: 80px;
+}
+
+.land .image {
+  flex-basis: 55%;
+}
+
+.land .image img {
+  max-width: 100%;
+  position: relative;
+  z-index: -2;
+}
+
+.land .info {
+  flex-basis: 45%;
+}
+
+.land .info h1 {
+  color: var(--base-color);
+  font-size: 50px;
+}
+
+.land .info p {
+  font-size: 24px;
+  color: #333;
+}
+
+/*** End Land ***/
+
+
+/*** Start Know ***/
+.know {
+  margin-top: 55px;
+  gap: 20px;
+}
+
+.know h2 {
+  font-size: 25px;
+}
+
+.know .box {
+  background-color: #fcfcfc;
+  padding: 20px;
+  color: var(--base-color);
+  width: 320px;
+}
+
+.know .box i {
+  width: 80px;
+  height: 80px;
+  background-color: var(--base-alt-color);
+  font-size: 35px;
+  border-radius: 50%;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.know .box span:first-of-type {
+  font-size: 17px;
+}
+
+.know .box span:last-of-type {
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+/*** End Know ***/

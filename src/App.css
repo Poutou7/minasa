@@ -1,0 +1,92 @@
+/*** Variables ***/
+:root {
+  --base-color: #00a1c6;
+  --base-alt-color: rgb(0 161 198 / 10%);
+  /* --second-color: #523ab7; */
+  --second-color: #f57172;
+  /* --second-alt-color: #8367f3; */
+  --second-alt-color: #f44336;
+  --transition: 0.4s
+}
+
+/*** Global Rules ***/
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+
+p {
+  color: #888;
+  font-size: 14px;
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+span {
+  display: block;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 200px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*
+Store : <i class="fa-solid fa-store"></i>  f54e
+twitter : <i class="fa-brands fa-twitter"></i>  f099
+fb: <i class="fa-brands fa-facebook-f"></i> f39e
+linked : <i class="fa-brands fa-linkedin-in"></i> f0e1
+google + : <i class="fa-brands fa-google"></i> f1a0
+insta : <i class="fa-brands fa-instagram"></i> f16d
+behance : <i class="fa-brands fa-behance"></i>  f1b4
+pen : <i class="fa-solid fa-pen-ruler"></i> f5ae
+lamp : <i class="fa-regular fa-lightbulb"></i> f0eb
+print : <i class="fa-solid fa-print"></i>  f02f
+dollar : <i class="fa-solid fa-dollar-sign"></i>  24
+bold : <i class="fa-solid fa-bolt"></i>  f0e7
+appel : <i class="fa-brands fa-apple"></i> f179
+andirod : <i class="fa-brands fa-google-play"></i>  f3ab
+*/

@@ -1,0 +1,131 @@
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.rad-10 {
+  border-radius: 10px;
+}
+
+.rad-20 {
+  border-radius: 20px;
+}
+
+.border-eee {
+  border: 1px solid #ddd;
+}
+
+.title-head {
+  position: relative;
+  text-align: center;
+  color: var(--base-color);
+  font-size: 35px;
+  margin: 0 auto 65px;
+  width: fit-content;
+}
+
+.title-head::before,
+.title-head::after {
+  content: '';
+  position: absolute;
+  background-color: var(--base-alt-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.title-head::before {
+  left: -5px;
+  top: -12px;
+}
+
+.title-head::after {
+  right: -17px;
+  top: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+  }
+
+  .title-head {
+    font-size: 1.6em;
+  }
+
+  .second-title {
+    text-align: center;
+    font-size: 1.3em;
+  }
+}
+
+.btn-shape {
+  position: relative;
+  margin: 30px auto;
+  width: 140px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: var(--second-color);
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: 700;
+  /* transition: var(--transition); */
+  overflow: hidden;
+  z-index: 2;
+}
+
+.btn-shape::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  /* background-color: var(--second-alt-color); */
+  background-color: var(--second-alt-color);
+  border-radius: 30px;
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.btn-shape:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--base-alt-color);
+  opacity: 0.4;
+  z-index: -1;
+}

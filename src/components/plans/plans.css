@@ -1,0 +1,124 @@
+.plans-comp > div:first-of-type {
+  margin: 40px auto;
+  width: fit-content;
+  display: flex;
+}
+
+.plans-comp > div:first-of-type span {
+  font-size: 27px;
+  font-weight: 800;
+  padding: 0 20px 20px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.plans-comp > div:first-of-type .monthly {
+  border-bottom-color: var(--base-color);
+  color: var(--base-color)
+}
+
+.plans-comp > div:first-of-type .yearly {
+  border-bottom-color: #888;
+  color: #888;
+  margin-left: 20px;
+}
+
+.plans {
+  gap: 30px;
+}
+
+.plan {
+  padding: 30px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.plan h2 {
+  font-size: 30px;
+}
+
+.plan .price {
+  margin: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.plan .price span {
+  display: inline-block;
+}
+
+.plan .price span:first-of-type {
+  position: relative;
+  font-size: 46px;
+  font-weight: 900;
+  margin-left: 40px;
+}
+
+.plan .price span:first-of-type::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\24';
+  position: absolute;
+  left: -24px;
+  top: 7px;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+
+.plan p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+  transition: var(--transition);
+}
+
+.plan ul li {
+  position: relative;
+  padding: 10px;
+  font-weight: 600;
+  color: #888;
+  transition: var(--transition);
+}
+
+.plan ul li::before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f0e7';
+  font-weight: bold;
+  position: absolute;
+  color: #333;
+  right: 62px;
+  top: 11px;
+  transition: var(--transition);
+}
+
+.plan button {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: var(--base-color);
+  color: #fff;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.plan:hover {
+  color: #fff;
+  background-color: var(--base-color);
+  transform: translateY(-20px);
+}
+
+.plan:hover p,
+.plan:hover li,
+.plan:hover i {
+  color: #fff
+}
+
+.plan:hover button {
+  background-color: #fff;
+  color: var(--base-color);
+}
