@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/minasa/static/css/main.cfbeee54.css",
+    "main.js": "/minasa/static/js/main.5af6d1fa.js",
+    "static/media/video1.jpg": "/minasa/static/media/video1.bf5954f4c4c1dee7c6a4.jpg",
+    "static/media/shop.webp": "/minasa/static/media/shop.32823bfba75bdac3c809.webp",
+    "index.html": "/minasa/index.html",
+    "main.cfbeee54.css.map": "/minasa/static/css/main.cfbeee54.css.map",
+    "main.5af6d1fa.js.map": "/minasa/static/js/main.5af6d1fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfbeee54.css",
+    "static/js/main.5af6d1fa.js"
+  ]
+}
